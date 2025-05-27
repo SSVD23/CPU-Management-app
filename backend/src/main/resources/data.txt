@@ -1,0 +1,7 @@
+INSERT INTO socket (name) VALUES ('AM4'), ('LGA1200'), ('AM5'), ('LGA1700');
+INSERT INTO cpu (brand, model, clockspeed, cores, threads, tdp, price, socket_id)
+VALUES 
+    ('Intel', 'Core i5-11400', 2.6, 6, 12, 65, 189.99, 2),
+    ('AMD', 'Ryzen 5 5600X', 3.7, 6, 12, 65, 279.99, 1),
+    ('Intel', 'Core i7-12700K', 3.6, 12, 20, 125, 399.99, 4),
+    ('AMD', 'Ryzen 7 5800X', 3.8, 8, 16, 105, 449.99, 1);
