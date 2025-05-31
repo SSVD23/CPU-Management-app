@@ -8,11 +8,24 @@ function App() {
 
   return (
     <div className="App">
-      <h1>CPU Management</h1>
-      <div className="container">
-        <CPUList onSelectCPU={setSelectedCPU} />
-        {selectedCPU && <CPUDetails cpu={selectedCPU} onClose={() => setSelectedCPU(null)} />}
-      </div>
+      <header>
+        <h1>CPU Management</h1>
+      </header>
+      <main>
+        <div className="container">
+          <CPUList onSelectCPU={setSelectedCPU} />
+          {selectedCPU && (
+            <div className="modal">
+              <div className="modal-content">
+                <CPUDetails 
+                  cpu={selectedCPU} 
+                  onClose={() => setSelectedCPU(null)} 
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </main>
     </div>
   );
 }
