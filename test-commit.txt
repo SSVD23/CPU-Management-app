@@ -1,3 +1,0 @@
-This is a test file to verify Git commit configuration.
-Author: SSVD23
-Email: smitdholiya2311@gmail.com 
